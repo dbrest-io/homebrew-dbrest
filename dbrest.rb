@@ -5,21 +5,21 @@
 class Dbrest < Formula
   desc "dbREST is an API backend that you can put in front of your database. Ever wanted to spin up an API service in front of your Snowflake, MySQL or even SQLite database? Well, dbREST allows that!"
   homepage "https:/github.com/dbrest-io/dbrest"
-  version "0.0.47"
+  version "0.0.48"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dbrest-io/dbREST/releases/download/v0.0.47/dbrest_darwin_arm64.tar.gz"
-      sha256 "7ffa4133b4d4ea0b0fdd219d05c5405d522f76924156140f916b770839cb7c6d"
+      url "https://github.com/dbrest-io/dbREST/releases/download/v0.0.48/dbrest_darwin_arm64.tar.gz"
+      sha256 "ad9ed0e888c594b82ef1d563b4165c6a423ef7c47f76da1e92134a2d6e1f7a88"
 
       def install
         bin.install "dbrest"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dbrest-io/dbREST/releases/download/v0.0.47/dbrest_darwin_amd64.tar.gz"
-      sha256 "f2a7f63c08f83a697c323c77ec5c72403475f5115923e878e4daf406a13cb942"
+      url "https://github.com/dbrest-io/dbREST/releases/download/v0.0.48/dbrest_darwin_amd64.tar.gz"
+      sha256 "fbcfabc06942abbf7cea152e2c89e1b89a20505d392992441c97ed16151c1f28"
 
       def install
         bin.install "dbrest"
